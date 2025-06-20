@@ -1,0 +1,479 @@
+/* ===== ESTILOS BASE ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ==================== HEADER ==================== */
+header {
+    background-color: black;
+    padding: 15px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: white;
+    font-size: 1.8rem;
+    margin: 0;
+    text-align: left;
+    flex: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+header a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* ===== MEDIA QUERIES ===== */
+
+
+/* Móviles (max-width: 767px) */
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    header h1 {
+        text-align: center;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    
+    nav {
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    nav a {
+        padding: 6px 10px;
+        font-size: 0.95rem;
+    }
+}
+
+
+
+
+
+/* ==================== Home.html ==================== */
+/* ===== Archivo home.html PRESENTACIÓN ===== */
+.presentacion {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 40px;
+    background: linear-gradient(135deg, #fff8f0 0%, #f9e6d2 100%);
+    border-radius: 20px;
+
+    flex-wrap: wrap;
+}
+
+.presentacion img {
+    width: 600px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.presentacion .texto {
+    max-width: 500px;
+    color: #5b3a00;
+    text-align: left;
+    font-family: 'Chiron Sung HK', sans-serif;
+}
+
+.presentacion .texto h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 800;
+
+
+}
+
+.presentacion .texto p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #6b4a11;
+}
+
+/* ===== ACTIVIDAD ===== */
+.actividad {
+    background-color: beige;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+.actividad .texto2 {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.actividad h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    font-weight: 800;
+    color: #5b3a00;
+}
+
+.actividad p {
+    font-size: 19px;
+    line-height: 1.7;
+    color: #8b6229;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .presentacion {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+    
+    .presentacion img {
+        width: 100%;
+        max-width: 500px;
+    }
+    
+    .presentacion .texto h2 {
+        font-size: 32px;
+    }
+    
+    .actividad h3 {
+        font-size: 28px;
+    }
+}
+
+ /* ==================== SOBRE NOSOTROS  ==================== */
+
+.staff {
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(135deg, #fff8f0 0%, #f9e6d2 100%);
+    padding-top: 10px;
+}
+
+.staff h2 {
+    font-size: 2.5rem;
+    color: #5b3a00;
+    margin-bottom: 20px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+    font-family: 'Gravitas One', sans-serif;
+
+}
+
+.staff p {
+    font-size: 1.1rem;
+    color: #a16820;
+    padding: 20px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* MIEMBROS  */
+.staff .miembro {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%; 
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.staff .miembro img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+}
+
+.staff .miembro h3 {
+    font-size: 1.5rem;
+    color: #5b3a00;
+    margin-bottom: 10px;
+}
+
+.staff .miembro p {
+    font-size: 1rem;
+    color: #a16820;
+    margin-bottom: 0;
+}
+
+
+
+@media (max-width: 600px) {
+    .staff .miembro {
+        width: 90%; /* 1 columna en móvil */
+        margin: 0 auto 20px;
+        display: block;
+    }
+    
+    .staff h2 {
+        font-size: 2rem;
+    }
+    
+    .staff p {
+        font-size: 1rem;
+        padding: 20px;
+    }
+    
+    .staff .miembro img {
+        height: 250px;
+    }
+}
+
+
+
+
+
+/* ==================== CLIENTES  ==================== */
+.clientes {
+    width: 100%;
+    text-align: center;
+    background-color: #f9e6d2;
+    padding: 20px 0;
+}
+
+.clientes h2 {
+    font-size: 2.5rem;
+    color: #5b3a00;
+    margin-bottom: 20px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
+    padding: 0 15px;
+    font-family: "Playfair Display", serif;
+
+}
+
+.clientes p {
+    font-size: 1.1rem;
+    color: #a16820;
+    padding: 0 20px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.cliente {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se adapten */
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    padding: 20px;
+    background-color: #ffead3;
+    width: 90%;
+    max-width: 800px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    gap: 20px;
+}
+
+.cliente img {
+    width: 160px;
+    height: 160px;
+    min-width: 160px; /* Evita que se haga muy pequeño */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    object-fit: cover;
+}
+
+.cliente-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    flex: 1;
+    min-width: 250px; /* Ancho mínimo para el texto */
+}
+
+.cliente-texto h3 {
+    color: #7b4f24;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.cliente-texto p {
+    color: #333;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 768px) {
+    .cliente {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .cliente-texto {
+        text-align: center;
+        min-width: 100%;
+    }
+    
+    .cliente-texto p {
+        text-align: center;
+    }
+    
+    .clientes h2 {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ==================== CONTACTO ==================== */
+/* CONTENEDOR PRINCIPAL DEL FORMULARIO */
+#formularioContacto {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f5f0; /* Color claro que combina con panadería */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+}
+
+/* ESTILOS PARA LOS GRUPOS DE CAMPOS */
+#formularioContacto .grupo {
+    margin-bottom: 20px;
+}
+
+#formularioContacto .grupo label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #5c3a21;
+}
+
+/* ESTILOS ESPECÍFICOS PARA ELEMENTOS DEL FORMULARIO */
+#formularioContacto #nombre,
+#formularioContacto #email,
+#formularioContacto #comoEntero,
+#formularioContacto #especifique,
+#formularioContacto #mensaje {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d4b483;
+    border-radius: 4px;
+    background-color: #fff;
+    font-family: inherit;
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+
+#formularioContacto #especifique,
+#formularioContacto #mensaje {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* ESTILOS PARA EL BOTÓN */
+#formularioContacto button[type="submit"] {
+    background-color: #8B4513; 
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+#formularioContacto button[type="submit"]:hover {
+    background-color: #A0522D;
+}
+
+.escondido {
+    display: none !important;  
+}
+
+.contenido {
+    color: #8B4513;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Vollkorn SC', serif;
+
+}
+
+
+
+/* ==================== MEDIA QUERIES ==================== */
+/* Para tablets */
+@media screen and (max-width: 768px) {
+    #formularioContacto {
+        padding: 15px;
+    }
+    
+    #formularioContacto #nombre,
+    #formularioContacto #email,
+    #formularioContacto #comoEntero,
+    #formularioContacto #especifique,
+    #formularioContacto #mensaje {
+        font-size: 14px;
+        padding: 8px;
+    }
+    
+    #formularioContacto button[type="submit"] {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+/* ==================== FOOTER ==================== */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+/* ==================== Responsive ==================== */
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 15px 10px;
+        font-size: 0.95rem;
+    }
+
+}
